@@ -22,6 +22,9 @@ sendData=msg.getBytes();
 DatagramPacket sendPacket=new DatagramPacket(sendData,sendData.length,IPAddress,port);
 serverSocket.send(sendPacket);
 System.exit(0);
+serverSocket.close();
+input.close();
 }
 }
 
+ 
